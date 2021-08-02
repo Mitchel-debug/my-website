@@ -1,2 +1,2 @@
 # my website
- My first multi-page website
+ My first multi-page website.
