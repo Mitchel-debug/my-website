@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitchel's Personal website</title>
+    <link rel="stylesheet" href = "styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+</head>
+<body>
+    <navbar class = "navbar">
+        <ul class="nav-list">
+            <li class = "nav_item" id = "nav_header">
+                <a href="index.html">MITCHEL</a>
+            </li>
+            <li class = "nav_item" id = "home_page">
+                <a href="index.html">Home</a>
+            </li>
+            <li class = "nav_item" id = "about">
+                <a href="about_me.html">About Me</a>
+            </li>
+            <li class = "nav_item" id = "resume_page">
+                <a href="resume.html">Resume</a>
+            </li>
+            <li class="nav_item">
+                <a href="contact.html"><button id = "contact" class="contact_page">Contact</button></a>
+            </li>
+        </ul>
+    </navbar>
+    <div class="content">
+        <img id = "background_image" src="images/f1.jpg" alt="Formula 1">
+        <div class = "transparent_text">
+            <h2 id = "home_about">WHO AM I</h2>
+            <p id = "short text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie nulla at ligula molestie, ac placerat est commodo. Morbi vel aliquam leo. Etiam semper commodo sagittis. Proin id leo sed felis tincidunt dictum ac nec erat. Integer tempus nibh ut est sodales sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        </div>
+    </div>
+    <div class = "body_2">
+        <div class="body_content">
+            <img id = "headshot_image" src = "images/headshot.jpg" >
+            <div class="text">
+                <h4 id = "topic_tag">What I like</h4>
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis viverra nisl non dapibus. Duis tristique auctor ligula. Aenean varius fermentum lacus facilisis interdum. Quisque mattis lectus vestibulum arcu tincidunt, ut convallis ligula fermentum. Proin quis mollis sem. Ut sodales urna velit, quis ullamcorper augue semper et. Vestibulum imperdiet nunc at ornare fermentum. Mauris vulputate accumsan pulvinar. Cras hendrerit, orci non tempus scelerisque, ex magna elementum felis, volutpat sollicitudin justo diam id augue. Praesent consectetur urna non ipsum maximus, ut fermentum purus luctus. Duis tristique porttitor dolor. Aliquam semper ipsum quis iaculis interdum. Nam ut sapien nisi. Sed consectetur mattis semper.</div>
+            </div>
+        </div>
+        <h3 id = "heading_3">#MITCHEL_BOSS01 ON INSTA</h3>
+
+        <div id = "images_2" class = "container">
+            <div id = "slideshow">
+                <div class="mySlides">
+                    <div class="numberText">1 / 10</div>
+                        <img src="images/feelin_good_2.jpg" alt="also my photo" style="width: 100%;">
+                </div>
+                <div id = "feeling_good" class="mySlides">
+                    <div class="numberText">2 / 10</div>
+                        <img src="images/feeling_good.jpg" alt="nothing here" style="width: 100%;">
+                </div>
+                <div class="mySlides">
+                    <div class="numberText">3 / 10</div>
+                        <img src="images/drip.png" alt="instagram photo" style="width: 100%; ">
+                </div>
+                <div class="mySlides">
+                    <div class="numberText">4 / 10</div>
+                        <img src="images/headshot.jpg" alt=""style="width: 100%;">
+                </div>
+                <div class="mySlides">
+                    <div class="numberText">5 / 10</div>
+                        <img src="images/insta_photo_1.jpg" alt="instagram photo of me" style="width: 100%;">
+                </div>
+                <div class="mySlides">
+                    <div class="numberText">6 / 10</div>
+                        <img src="images/park_photo.jpg" alt="instagramm photo of me" style="width: 100%;">
+                </div>
+                <div class = "mySlides">
+                    <div class="numberText">7 / 10</div>
+                        <img src="images/regular_photo.jpg" alt="instagramm photo of me" style="width: 100%;">
+                </div>
+                <div class = "mySlides">
+                    <div class="numberText">8 / 10</div>
+                        <img src="images/weirdest_photo.jpg" alt="the time I had my lowest haicut" style="width: 100%;">
+                </div>
+                <div class = "mySlides">
+                    <div class="numberText">9 / 10</div>
+                        <img src="images/barber_shop_photo.jpg" alt = "idk" style="width: 100%;">
+                </div>
+                <div class = "mySlides">
+                    <div class="numberText">10 / 10</div>
+                        <img src="images/debate_photo.jpg" alt="my photo" style="width: 100%;">
+                </div>
+
+                <a class = "prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <div class="caption-container">
+                    <p id = "caption"></p>
+                </div>
+            </div>
+            <div id = "thumbnail" class="row">
+                <div class="column">
+                    <img class = "demo cursor" src="images/feelin_good_2_small.jpg" alt="It's your boy Mitchel" style="width: 100%;" height="140px"onclick="currentSlide(1)">
+                </div>
+                <div class="column">
+                    <img class = "demo cursor" src="images/feeling_good_small.jpg" style="width: 100%;" height="140px"alt="Sometimes, I like to make funny faces :)" onclick="currentSlide(2)">
+                </div>
+                <div id = "third_image" class="column">
+                    <img class = "demo cursor" src="images/drip_small.jpg" style="width: 100%;" height="140px"alt="This has been in my album since last year. Can't remember what I was looking at XD" onclick="currentSlide(3)">
+                </div>
+                <div class="column">
+                    <img class = "demo cursor" src="images/headshot_small.jpg" style="width: 100%;" height="140px"alt="Looking cool as always" onclick="currentSlide(4)">
+                </div>
+                <div class="column">
+                    <img class = "demo cursor" src="images/insta_photo_1_small.png" style="width: 100%;" height="140px"alt="Cringe momment after I got a new haircut" onclick="currentSlide(5)">
+                </div>
+                <div class="column">
+                    <img class = "demo cursor" src="images/park_photo_small.jpg" style="width: 100%;" height="140px"alt="Average day at the park" onclick="currentSlide(6)">
+                </div>
+                <div class="column">
+                    <img class = "demo cursor" src="images/regular_photo_small.jpg" style="width: 100%;" height="140px"alt="instagram photo" onclick="currentSlide(7)">
+                </div>
+                <div class="column">
+                    <img class = "demo cursor" src="images/weirdest_photo_small.png" style="width: 100%;" height="140px"alt="The time I felt bad when my dad cut my hair too low" onclick="currentSlide(8)">
+                </div>
+                <div class="column">
+                    <img class = "demo cursor" src="images/barber_shop_photo_small.jpg" style="width: 100%;" height="140px"alt="Just me at the salon" onclick="currentSlide(9)">
+                </div>
+                <div class="column">
+                    <img class = "demo cursor" src="images/debate_photo_small.jpg" style="width: 100%;" height="140px"alt="Took this when I won 2nd place in a debate competition" onclick="currentSlide(10)">
+                </div>
+            </div>
+        </div>
+        <div id = "output"></div>
+    </div>
+    <!-- <script>
+        function offset(el){
+        let rect = el.getBoundingClientRect(),
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+        }
+        let prev = document.querySelector('.prev');
+        let next = document.querySelector(".next");
+        let container = document.querySelector('.caption-container');
+        let prevOffset = offset(prev);
+        let nextOffset = offset(container);
+        console.log(prevOffset.left, prevOffset.top);
+        let diva = document.getElementById("output")
+        diva.innerHTML = "top: " + prevOffset.top + " next: " + nextOffset.top;
+        if(prevOffset.top > nextOffset.top || prevOffset.top < nextOffset.top){
+            nextOffset.top = 939;
+        }
+    </script> -->
+    <script src="sketch.js">
+    </script>
+</body>
+</html>

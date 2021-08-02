@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "styles_2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+    <title>About me</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+            background: #f1f1e1;
+            font-family: 'Vollkorn', serif;
+            text-align: justify;
+            /* overflow:scroll; */
+        }
+        #about{
+            padding-top: 98px;
+            padding-bottom: 101px;
+        }
+        #about .triangle-right{
+            margin-top: 95px;
+            width: 0;
+            height: 0;
+            border-top: 259px solid transparent;
+            border-left: 470px solid #d6c6b2;
+            border-bottom: 259px solid transparent;
+        }
+
+        #about .triangle-right img{
+            position: absolute;
+            left: -1px;
+            top: 81px;
+            width: 74%;
+        }
+        .fa-play{
+            font-size: 100px;
+        }
+        #about .p-first{
+            margin-bottom: 30px;
+        }
+        #about h2{
+            margin-bottom: 47px;
+            margin-top: 12px;
+        }
+
+        #about .social-link-text{
+            margin-top: 50px;
+            margin-bottom: 25px;
+        }
+        #about .about-link{
+            padding-left: 0px;
+        }
+        #about .about-link li{
+            display: inline-block;
+        }
+        #about .about-link li a{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid blue;
+            margin-right: 10px;
+            font-size: 22px;
+            color: blue;
+            transition: all .3s;
+        }
+        #about .about-link li a i:hover{
+            color: rgb(202, 202, 165);
+            /* background: blue;
+            background: blue; */
+        }
+
+        #about .about-img{
+            position: relative;
+        }
+        #about .about-img .man{
+            position: absolute;
+            bottom: 161px;
+            top: 12px;
+            left: -2px;
+        }
+
+        .color-3{
+            color: blue;
+        }
+
+        p{
+            margin-bottom: 0;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .btn-danger{
+            border-radius: 0;
+            padding: 10px 20px;
+            background-color: blue;
+            border: blue;
+        }
+    </style>
+</head>
+<body>
+    <navbar class = "navbar_2">
+        <ul class="nav-list_2">
+            <li class = "nav_item_2" id = "nav_header_2">
+                <a href="index.html">MITCHEL</a>
+            </li>
+            <li class = "nav_item_2" id = "home_page_2">
+                <a href="index.html">Home</a>
+            </li>
+            <li class = "nav_item_2" id = "about_2">
+                <a href="about_me.html">About Me</a>
+            </li>
+            <li class = "nav_item_2" id = "resume_page_2">
+                <a href="resume.html">Resume</a>
+            </li>
+            <li class="nav_item_2">
+                <a href="contact.html"><button id = "contact" class="contact_page">Contact</button></a>
+            </li>
+        </ul>
+    </navbar>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="about-img">
+                        <!-- <img class="shape" src="images/about_tringle.png" alt=""> -->
+                        <img class ="man" src="images/insta_photo_1.jpg" alt="">
+
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-7 about-right">
+                    <h2 class="color-3"><b>About Me</b></h2>
+                    <p class="p-first text-black">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis viverra nisl non dapibus. Duis tristique auctor ligula. Aenean varius fermentum lacus facilisis interdum. Quisque mattis lectus vestibulum arcu tincidunt, ut convallis ligula fermentum. Proin quis mollis sem. Ut sodales urna velit, quis ullamcorper augue semper et. Vestibulum imperdiet nunc at ornare fermentum. Mauris vulputate accumsan pulvinar. Cras hendrerit, orci non tempus scelerisque, ex magna elementum felis, volutpat sollicitudin justo diam id augue. Praesent consectetur urna non ipsum maximus, ut fermentum purus luctus. Duis tristique porttitor dolor. Aliquam semper ipsum quis iaculis interdum. Nam ut sapien nisi. Sed consectetur mattis semper.
+                    </p>
+                    <p class="text-black">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis viverra nisl non dapibus. Duis tristique auctor ligula. Aenean varius fermentum lacus facilisis interdum. Quisque mattis lectus vestibulum arcu tincidunt, ut convallis ligula fermentum. Proin quis mollis sem. Ut sodales urna velit, quis ullamcorper augue semper et. Vestibulum imperdiet nunc at ornare fermentum. Mauris vulputate accumsan pulvinar. Cras hendrerit, orci non tempus scelerisque, ex magna elementum felis, volutpat sollicitudin justo diam id augue. Praesent consectetur urna non ipsum maximus, ut fermentum purus luctus. Duis tristique porttitor dolor. Aliquam semper ipsum quis iaculis interdum. Nam ut sapien nisi. Sed consectetur mattis semper.
+                    </p>
+                    <h3 class="color-3 social-link-text">
+                        <a href="contact.html"><button class="btn btn-danger">Contact me</button></a>
+                    </h3>
+                    <ul class="about-link">
+                        <li><a href=""><i class="fa fa-fonticons"></i></a></li>
+                        <li><a href=""><i class="fa fa-envira"></i></a></li>
+                        <li><a href=""><i class="fa fa-reddit-alien"></i></a></li>
+                        <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

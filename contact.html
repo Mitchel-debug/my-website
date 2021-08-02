@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "styles_3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head>
+<body>
+    <navbar class = "navbar">
+        <ul class="nav-list">
+            <li class = "nav_item" id = "nav_header">
+                <a href="index.html">MITCHEL</a>
+            </li>
+            <li class = "nav_item" id = "home_page">
+                <a href="index.html">Home</a>
+            </li>
+            <li class = "nav_item" id = "about">
+                <a href="about_me.html">About Me</a>
+            </li>
+            <li class = "nav_item" id = "resume_page">
+                <a href="resume.html">Resume</a>
+            </li>
+            <li class="nav_item">
+                <a href="contact.html"><button id = "contact" class="contact_page">Contact</button></a>
+            </li>
+        </ul>
+    </navbar>
+
+    <div class = "contact-title">
+        <h1>Contact me</h1>
+        <h2>You can send me an email</h2>
+    </div>
+    <div class="contact-form">
+        <form id = "contact-form" method="post" action="contact_responses.php">
+            <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+            <input name="Email" type="email" class="form-control" placeholder="Your Email" required><br>
+            <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+            <input type="submit" class="form-control submit" value="SEND MESSAGE">
+
+        </form>
+    </div>
+</body>
+</html>
